@@ -8,10 +8,8 @@ const Nav = () =>{
 
     {/*Open and close toggle function for mobile*/}
     const [toggle, setToggle] = useState(false)
-    const openMenu = () => {setToggle(true)
-        console.log('Clicked1')}
-    const closeMenu = () => {setToggle(false) 
-        console.log('CLiked')}
+    const openMenu = () => setToggle(true)
+    const closeMenu = () => setToggle(false) 
 
     return (
         <>
@@ -27,11 +25,13 @@ const Nav = () =>{
                     </div>
                     {/* Navigation bar for 720 below*/}
                     <div className="ssm:block lg:hidden">
-                        {toggle ? (<AiOutlineClose onClick={closeMenu} size={30} className="text-white"/>) : (<HiMenuAlt1 onClick={openMenu} size={30} className="text-white"/>)}
-                        {toggle ? (<NavMobile />):(<div />)}
+                        {toggle ? (<AiOutlineClose onClick={closeMenu} size={30} className="text-white"/>) : 
+                        (<HiMenuAlt1 onClick={openMenu} size={30} className="text-white"/>)}
                     </div>
                 </div>
-                
+            </div>
+            <div>
+                {toggle ? (<NavMobile />):(<div />)}
             </div>
         </>
     )
