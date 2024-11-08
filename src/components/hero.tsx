@@ -1,4 +1,4 @@
-import { BsFacebook, BsLinkedin } from "react-icons/bs"
+//import { BsFacebook, BsLinkedin } from "react-icons/bs"
 import Heropic from "../assets/old.jpg"
 const Hero = () =>{
     return(
