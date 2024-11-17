@@ -16,7 +16,7 @@ const Hero = () =>{
                 </p>
             </div>
             <div className="w-1/3 item-center ssm:w-fit">
-                <img src={Heropic} alt="" width={250} height={250} className="rounded-full w-full border-8 border-white" />
+                <img src={Heropic} alt="" width={250} height={250} className="rounded-full w-full border-8 border-white-600" />
             </div>
             <div className="lg:w-1/3 ssm:w-fit">
                 <p>About me</p>
